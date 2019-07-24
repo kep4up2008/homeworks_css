@@ -1,0 +1,19 @@
+#menu [href="#menu"] {
+    color: palevioletred;
+}
+
+#menu [href="#articles"] {
+    color: green;
+}
+
+#menu [href="#articles-last"] {
+    color: red;
+}
+
+h3 span{
+    color: green;
+}
+
+p > span {
+    color: blue;
+}

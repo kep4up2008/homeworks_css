@@ -1,0 +1,24 @@
+h1 {
+    color: blue; /*0.0.0.1*/
+}
+#title {
+    color: red; /*0.1.0.0*/
+}
+.page-title {
+    color: green; /*0.0.1.0*/
+}
+
+#main-nav {
+    color: gray; /*0.1.0.0*/
+}
+.discount {
+    color: orange; /*0.0.1.0*/
+}
+
+#title {
+    color: green; /*0.1.0.0*/
+}
+
+a {
+    color: inherit; /*0.0.0.1*/
+}

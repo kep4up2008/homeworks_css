@@ -8,8 +8,8 @@ h1 {
     color: green; /*0.0.1.0*/
 }
 
-#main-nav {
-    color: gray; /*0.1.0.0*/
+.nav {
+    color: gray; /*0.0.1.0*/
 }
 .discount {
     color: orange; /*0.0.1.0*/
@@ -19,6 +19,6 @@ h1 {
     color: green; /*0.1.0.0*/
 }
 
-a {
-    color: inherit; /*0.0.0.1*/
+.nav a {
+    color: inherit; /*0.0.1.1*/
 }

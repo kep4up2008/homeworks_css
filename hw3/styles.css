@@ -1,0 +1,27 @@
+#menu [href="#menu"] {
+    color: palevioletred;        /*0.1.0.0*/
+}
+
+#menu [href="#articles"] {
+    color: green;               /*0.1.0.0*/
+}
+
+#menu [href="#articles-last"] {
+    color: red;                 /*0.1.0.0*/
+}
+
+h3 span{
+    color: green;               /*0.0.0.2*/
+}
+
+p>span {
+    color: blue;                /*0.0.0.2*/
+}
+
+span+span { 
+    color: red;                 /*0.0.0.2*/
+}
+
+p+p {
+    color: goldenrod;           /*0.0.0.2*/
+}

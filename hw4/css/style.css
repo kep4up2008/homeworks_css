@@ -18,7 +18,8 @@ thead {
 }
 
 tbody {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    color: black;
 }
 
 .red_row .color {
@@ -51,17 +52,17 @@ tbody {
 
 .orange_row .hex {
    background-color: #FFA500; 
-   color:blue;
+   color: #152f27;
 }
 
 .orange_row .rgb {
     background-color: rgb(255, 165, 0); 
-    color: rgb(200,0,200);
+    color: rgba(101,11,101,1);
 }
 
 .orange_row .hsl {
     background-color: hsl(39, 100%, 50%); 
-    color: rgb(19, 39, 223);
+    color: hsl(128, 60%, 20%);
 }
 
 .orange_row .alpha {
@@ -98,17 +99,17 @@ tbody {
 
 .green_row .hex {
    background-color: #008000; 
-   color:blue;
+   color: #fff900;
 }
 
 .green_row .rgb {
     background-color: rgb(0, 128, 0); 
-    color: rgb(200,0,200);
+    color: rgb(238,255,10);
 }
 
 .green_row .hsl {
     background-color: hsl(120, 100%, 25%); 
-    color: rgb(19, 39, 223);
+    color: hsl(39, 100%, 50%);
 }
 
 .green_row .alpha {
@@ -121,22 +122,22 @@ tbody {
 
 .cyan_row .hex {
    background-color: #00FFFF; 
-   color: white;
+   color: #9c3030;
 }
 
 .cyan_row .rgb {
     background-color: rgb(0, 255, 255); 
-    color: rgb(168,255,200);
+    color: rgb(101,91,14);
 }
 
 .cyan_row .hsl {
     background-color: hsl(180, 100%, 50%); 
-    color: hsl(180, 100%, 65%)
+    color: hsl(180, 73%, 16%)
 }
 
 .cyan_row .alpha {
     background-color: #00FFFF; 
-    opacity: .3;    
+    opacity: .5;    
 }
 
 .blue_row .color {
@@ -145,21 +146,21 @@ tbody {
 
 .blue_row .hex {
    background-color: #0000FF; 
-   color:grey;
+   color:#f3e41c;
 }
 
 .blue_row .rgb {
     background-color: rgb(0, 0, 255); 
-    color: rgb(200,0,200);
+    color: rgb(9,245,192);
 }
 
 .blue_row .hsl {
     background-color: hsl(240, 100%, 50%); 
-    color: rgb(19, 39, 223);
+    color: hsl(0, 15%, 96%);
 }
 
 .blue_row .alpha {
-    background-color: hsla(240, 100%, 50%, 0.2);
+    background-color: hsla(240, 100%, 50%, 0.4);
     
 }
 
@@ -169,19 +170,19 @@ tbody {
 
 .violet_row .hex {
    background-color: #EE82EE; 
-   color:blue;
+   color:#001ba7;
 }
 
 .violet_row .rgb {
     background-color: rgb(238, 130, 238); 
-    color: rgb(56, 179, 25);
+    color: rgb(13, 68, 18);
 }
 
 .violet_row .hsl {
     background-color: hsl(300, 76%, 72%); 
-    color: rgb(19, 39, 223);
+    color: hsl(234, 94%, 21%);
 }
 
 .violet_row .alpha {
-    background-color: rgba(238, 130, 238, 0.1);
+    background-color: rgba(238, 130, 238, 0.3);
 }

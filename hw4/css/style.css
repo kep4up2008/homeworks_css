@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+}
+
+table,
+td,
+th {
+  border-spacing: 0; /* расстояние между границами ячеек (аналог атрибута cellspacing) */
+  border: 1px solid black; /* Добавляет черную границу ячейкам и таблице */
+  border-collapse: collapse; /* Объединяет смежные границы в одну */
+}
+table {
+    width: 700px;
+}
+
+thead {
+    font-size: 18pt;
+}
+
+tbody {
+    font-weight: bold;
+}
+
+.red_row .color {
+    background: red;
+}
+
+.red_row .hex {
+   background-color: #FF0000; 
+   color: white;
+}
+
+.red_row .rgb {
+    background-color: rgb(255, 0, 0); 
+    color: rgb(168,255,200);
+}
+
+.red_row .hsl {
+    background-color: hsl(0, 100%, 50%); 
+    color: hsl(180, 100%, 65%)
+}
+
+.red_row .alpha {
+    background-color: #FF0000; 
+    opacity: .6;    
+}
+
+.yellow_row .color {
+    background: yellow;
+}
+
+.yellow_row .hex {
+   background-color: #FFFF00; 
+   color:;
+}
+
+.yellow_row .rgb {
+    background-color: rgb(255, 255, 0); 
+    color: rgb(168,255,200);
+}
+
+.yellow_row .hsl {
+    background-color: hsl(60, 100%, 50%); 
+    color: rgb(19, 39, 223);
+}
+
+.yellow_row .alpha {
+    background-color: rgba (255, 255, 0, .5);    
+}

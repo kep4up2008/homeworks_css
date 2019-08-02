@@ -42,7 +42,31 @@ tbody {
 
 .red_row .alpha {
     background-color: #FF0000; 
-    opacity: .6;    
+    opacity: .7;    
+}
+
+.orange_row .color {
+    background: orange;
+}
+
+.orange_row .hex {
+   background-color: #FFA500; 
+   color:blue;
+}
+
+.orange_row .rgb {
+    background-color: rgb(255, 165, 0); 
+    color: rgb(200,0,200);
+}
+
+.orange_row .hsl {
+    background-color: hsl(39, 100%, 50%); 
+    color: rgb(19, 39, 223);
+}
+
+.orange_row .alpha {
+    background-color: hsla(39, 100%, 50%, 0.6);
+    
 }
 
 .yellow_row .color {
@@ -51,12 +75,12 @@ tbody {
 
 .yellow_row .hex {
    background-color: #FFFF00; 
-   color:;
+   color:blue;
 }
 
 .yellow_row .rgb {
     background-color: rgb(255, 255, 0); 
-    color: rgb(168,255,200);
+    color: rgb(200,0,200);
 }
 
 .yellow_row .hsl {
@@ -65,5 +89,99 @@ tbody {
 }
 
 .yellow_row .alpha {
-    background-color: rgba (255, 255, 0, .5);    
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.green_row .color {
+    background: green;
+}
+
+.green_row .hex {
+   background-color: #008000; 
+   color:blue;
+}
+
+.green_row .rgb {
+    background-color: rgb(0, 128, 0); 
+    color: rgb(200,0,200);
+}
+
+.green_row .hsl {
+    background-color: hsl(120, 100%, 25%); 
+    color: rgb(19, 39, 223);
+}
+
+.green_row .alpha {
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+.cyan_row .color {
+    background: cyan;
+}
+
+.cyan_row .hex {
+   background-color: #00FFFF; 
+   color: white;
+}
+
+.cyan_row .rgb {
+    background-color: rgb(0, 255, 255); 
+    color: rgb(168,255,200);
+}
+
+.cyan_row .hsl {
+    background-color: hsl(180, 100%, 50%); 
+    color: hsl(180, 100%, 65%)
+}
+
+.cyan_row .alpha {
+    background-color: #00FFFF; 
+    opacity: .3;    
+}
+
+.blue_row .color {
+    background: blue;
+}
+
+.blue_row .hex {
+   background-color: #0000FF; 
+   color:grey;
+}
+
+.blue_row .rgb {
+    background-color: rgb(0, 0, 255); 
+    color: rgb(200,0,200);
+}
+
+.blue_row .hsl {
+    background-color: hsl(240, 100%, 50%); 
+    color: rgb(19, 39, 223);
+}
+
+.blue_row .alpha {
+    background-color: hsla(240, 100%, 50%, 0.2);
+    
+}
+
+.violet_row .color {
+    background: violet;
+}
+
+.violet_row .hex {
+   background-color: #EE82EE; 
+   color:blue;
+}
+
+.violet_row .rgb {
+    background-color: rgb(238, 130, 238); 
+    color: rgb(56, 179, 25);
+}
+
+.violet_row .hsl {
+    background-color: hsl(300, 76%, 72%); 
+    color: rgb(19, 39, 223);
+}
+
+.violet_row .alpha {
+    background-color: rgba(238, 130, 238, 0.1);
 }

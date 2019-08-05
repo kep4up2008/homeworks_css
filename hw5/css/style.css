@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../roboto-black-webfont.woff2') format('woff2'),
+         url('../roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('../roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('../roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../roboto-bold-webfont.woff2') format('woff2'),
+         url('../roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('../roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../roboto-light-webfont.woff2') format('woff2'),
+         url('../roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../roboto-medium-webfont.woff2') format('woff2'),
+         url('../roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('../roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('../roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../roboto-regular-webfont.woff2') format('woff2'),
+         url('../roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../roboto-regularitalic-webfont.woff2') format('woff2'),
+         url('../roboto-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin';
+    src: url('../roboto-thin-webfont.woff2') format('woff2'),
+         url('../roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('../roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('../roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+html {
+    font-size: 12 px;
+}
+
+body {
+    
+
+}
+article {
+    background-color: aqua;
+    vertical-align: middle;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
+    font-weight: lighter;
+    margin: 0;
+    /*font-style: italic;*/
+}
+
+h2{
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive;
+    margin: 0;
+}
+
+.section_1 {
+    font-family: 'robotothin', sans-serif;
+    
+    text-align: justify;
+    background-color: lightblue;
+    color: red;
+}
+
+.italic {
+    font-style: italic;
+    color: grey;    
+}
+
+.bold {
+    font-weight: bold;
+    color: black;
+    font-size: 3 rem;
+}
+
+.section_2 {
+    font-size: 20px;
+}
+
+footer {
+    font-family: 'Inconsolata', monospace;
+    border: solid lightgray 1px;
+    background-color: ghostwhite;
+    font-style: italic;
+    font-size: ;
+}

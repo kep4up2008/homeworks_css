@@ -89,10 +89,6 @@ html {
     font-size: 12 px;
 }
 
-body {
-    
-
-}
 article {
     background-color: aqua;
     vertical-align: middle;
@@ -105,24 +101,31 @@ p {
 
 h1 {
     text-align: center;
-    font-family: 'Sigmar One', cursive;
+    font-family: fantasy;
     font-weight: lighter;
+    font-size: 50px;
     margin: 0;
     /*font-style: italic;*/
 }
 
 h2{
     text-align: center;
-    font-family: 'Saira Stencil One', cursive;
+    font-family: fantasy;
     margin: 0;
+    font-size: 50px;
+    font-weight:bolder; 
 }
 
 .section_1 {
     font-family: 'robotothin', sans-serif;
-    
     text-align: justify;
     background-color: lightblue;
     color: red;
+    font-size: 150%;
+}
+
+.section_1 span {
+    font-size: 0.7em;
 }
 
 .italic {
@@ -137,7 +140,15 @@ h2{
 }
 
 .section_2 {
+    font-family: 'robotomedium_italic';
     font-size: 20px;
+    color: darkcyan;
+    text-align: justify;
+    font-size: 36px;
+}
+
+.section_2 span {
+    font-size: 24px;
 }
 
 footer {

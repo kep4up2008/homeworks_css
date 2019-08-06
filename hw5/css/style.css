@@ -1,91 +1,17 @@
 @font-face {
-    font-family: 'robotoblack';
-    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/*@font-face {
-    font-family: 'robotoblack_italic';
-    src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotobold';
+    font-family: 'roboto';
     src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
          url('../fonts/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotobold_italic';
+    font-family: 'roboto';
     src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
          url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 }
-@font-face {
-    font-family: 'robotolight';
-    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotolight_italic';
-    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotomedium';
-    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotomedium_italic';
-    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotoregular';
-    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotoitalic';
-    src: url('../fonts/roboto-regularitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-regularitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotothin';
-    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotothin_italic';
-    src: url('../fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Yeseva+One&display=swap');/*1*/
-@import url('https://fonts.googleapis.com/css?family=Prosto+One&display=swap'); /*2 font-family: 'Prosto One', cursive;*/
-@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap&subset=cyrillic');
 
 article {
     background-color: aqua;
@@ -108,18 +34,19 @@ h1 {
 
 h2{
     text-align: center;
-    font-family: 'Yeseva One';
+    font-family: 'Lobster', cursive;
     margin: 0;
     font-size: 50px;
     font-weight:bolder; 
 }
 
 .section_1 {
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto', sans-serif;
     text-align: justify;
     background-color: lightblue;
     color: red;
     font-size: 150%;
+    font-style: normal;
 }
 
 .section_1 span {
@@ -138,11 +65,12 @@ h2{
 }
 
 .section_2 {
-    font-family: 'robotomedium_italic', sans-serif;
+    font-family: 'roboto', sans-serif;
     color: green;
     background-color: lightblue;
     text-align: justify;
     font-size: 36px;
+    font-style: italic; 
 }
 
 .section_2 span {
@@ -150,7 +78,7 @@ h2{
 }
 
 footer {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Fira Code', monospace;
     border: solid lightgray 1px;
     background-color: ghostwhite;
     font-style: italic;

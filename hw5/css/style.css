@@ -1,19 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Code:600|Kelly+Slab|Lobster&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:600|Kelly+Slab|Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext');
+
+/*font-family: 'Comfortaa',*/
 
 @font-face {
     font-family: 'roboto';
-    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-bold-webfont.woff') format('woff');
-    font-weight: bold;
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'roboto';
-    src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
-    font-weight: bold;
+    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
 
 article {
     background-color: aqua;
@@ -27,62 +39,67 @@ p {
 
 h1 {
     text-align: center;
-    font-family: 'Kelly Slab', cursive;
-    font-weight: lighter;
+    font-family: 'Kelly Slab';
     font-size: 50px;
     margin: 0;
-    /*font-style: italic;*/
+    
 }
 
 h2{
     text-align: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Comfortaa';
     margin: 0;
     font-size: 50px;
-    font-weight:bolder; 
+    
 }
 
 .section_1 {
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto';
     text-align: justify;
     background-color: lightblue;
-    color: red;
     font-size: 150%;
-    font-style: normal;
+    font-weight: 100;
 }
 
 .section_1 span {
     font-size: 0.7em;
+    color: green; 
+    
 }
 
 .italic {
     font-style: italic;
-    color: grey;    
+    
+    font-weight: 500;
+    font-style: italic;  
 }
 
 .bold {
-    font-weight: bold;
-    color: black;
+    
+    
     font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .section_2 {
-    font-family: 'roboto', sans-serif;
-    color: green;
+    font-family: 'roboto';
     background-color: lightblue;
     text-align: justify;
     font-size: 36px;
-    font-style: italic; 
+    font-weight: 100;
 }
 
 .section_2 span {
     font-size: 24px;
+    color: red;
 }
 
 footer {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code';
     border: solid lightgray 1px;
     background-color: ghostwhite;
     font-style: italic;
     font-size: 75%;
+    font-weight: 600;
 }

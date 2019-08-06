@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
+/*@font-face {
     font-family: 'robotoblack_italic';
     src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
          url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
@@ -81,13 +81,11 @@
          url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap, https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
-
-html {
-    font-size: 12 px;
-}
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Yeseva+One&display=swap');/*1*/
+@import url('https://fonts.googleapis.com/css?family=Prosto+One&display=swap'); /*2 font-family: 'Prosto One', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap&subset=cyrillic');
 
 article {
     background-color: aqua;
@@ -101,7 +99,7 @@ p {
 
 h1 {
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Kelly Slab', cursive;
     font-weight: lighter;
     font-size: 50px;
     margin: 0;
@@ -110,7 +108,7 @@ h1 {
 
 h2{
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Yeseva One';
     margin: 0;
     font-size: 50px;
     font-weight:bolder; 
@@ -136,12 +134,13 @@ h2{
 .bold {
     font-weight: bold;
     color: black;
-    font-size: 3 rem;
+    font-size: 3rem;
 }
 
 .section_2 {
-    font-family: 'robotomedium_italic';
-    color: darkcyan;
+    font-family: 'robotomedium_italic', sans-serif;
+    color: green;
+    background-color: lightblue;
     text-align: justify;
     font-size: 36px;
 }
@@ -155,5 +154,5 @@ footer {
     border: solid lightgray 1px;
     background-color: ghostwhite;
     font-style: italic;
-    font-size: ;
+    font-size: 75%;
 }

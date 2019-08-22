@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:600|Kelly+Slab|Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext');
+
+/*font-family: 'Comfortaa',*/
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+article {
+    background-color: aqua;
+    vertical-align: middle;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Kelly Slab';
+    font-size: 50px;
+    margin: 0;
+    text-decoration: underline wavy blueviolet;
+    text-transform: uppercase;
+    
+}
+
+h2{
+    text-align: center;
+    font-family: 'Comfortaa';
+    margin: 0;
+    font-size: 50px;
+    text-decoration: overline underline dotted red;
+    text-transform: capitalize;
+    
+}
+
+.section_1 {
+    font-family: 'roboto';
+    
+    background-color: lightblue;
+    font-size: 150%;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.section_1 span {
+    font-size: 0.7em;
+    color: green; 
+    
+    
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 500;
+    font-style: italic;  
+    word-spacing: -.2em;
+}
+
+.bold {
+    letter-spacing: 0.5em;   
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.section_2 {
+    font-family: 'roboto';
+    background-color: lightblue;
+    
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 1.1;
+}
+
+.section_2 span {
+    font-size: 24px;
+    color: red;
+    
+}
+
+footer {
+    font-family: 'Fira Code';
+    border: solid lightgray 1px;
+    background-color: ghostwhite;
+    font-style: italic;
+    font-size: 75%;
+    font-weight: 600;
+}
+
+.section_1::first-letter, .section_2::first-letter {
+    color: darkmagenta;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.section_1::first-line, .section_2::first-line {
+    color: darkmagenta;
+    font-weight: normal;
+}

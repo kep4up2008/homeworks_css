@@ -43,7 +43,7 @@ h1 {
     font-family: 'Kelly Slab';
     font-size: 50px;
     margin: 0;
-    text-decoration: underline wavy blueviolet;
+    text-decoration: line-through wavy blueviolet;
     text-transform: uppercase;
     
 }
@@ -121,4 +121,16 @@ footer {
 .section_1::first-line, .section_2::first-line {
     color: darkmagenta;
     font-weight: normal;
+}
+
+#star1 {
+vertical-align: middle;
+}
+
+#star2 {
+vertical-align: text-top;
+}
+
+#star3 {
+vertical-align: -15px;
 }

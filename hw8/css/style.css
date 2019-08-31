@@ -20,7 +20,7 @@ body {
 
 p {
     color: darkred;
-    padding: 0;
+    margin: 5px;
 }
 .centered {
     margin: 0 auto;

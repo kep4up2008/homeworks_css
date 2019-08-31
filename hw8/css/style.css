@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    
+}
+
+.system {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    width: 393px;
+    border: 2px solid  rgb(243, 197, 113);
+    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+p {
+    color: darkred;
+    padding: 0;
+}
+.centered {
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 10px;
+}
+
+.main {
+    background-color: rgb(243, 197, 113);
+}
+
+img {
+    margin-top: 5px;
+    border: 2px solid darkred;
+    border-radius: 50%/50%;
+    -webkit-border-radius: 50%/50%;
+    -moz-border-radius: 50%/50%;
+    -ms-border-radius: 50%/50%;
+    -o-border-radius: 50%/50%;
+}
+
+.system:hover {
+    background-color: rgb(243, 180, 63);
+    text-decoration: darkred underline;
+    -moz-text-decoration-line: darkred underline;
+    border: 2px solid darkred
+}

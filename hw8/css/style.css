@@ -8,14 +8,14 @@ body {
 .system {
     display: inline-block;
     text-align: center;
-    margin: 10px;
+    margin-top: 10px;
     width: 393px;
     border: 2px solid  rgb(243, 197, 113);
-    border-radius: 10px;
+    border-radius: 20px;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 p {
@@ -26,6 +26,7 @@ p {
     margin: 0 auto;
     width: 900px;
     padding-top: 10px;
+    text-align: center;
 }
 
 .main {

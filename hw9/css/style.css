@@ -20,9 +20,7 @@ article {
     max-width: 800px;
     margin: 0 auto;
     text-align: center; 
-    background-color: whitesmoke;  
-    height: 100%;
-    border: 1px red solid;     
+    background-color: whitesmoke;       
 }
 
 header, main, footer {
@@ -41,11 +39,10 @@ main {
     background-color: bisque;
    /* min-height: 60vh;
     min-height: calc(100vh - 350px);*/  
-    
+    padding-bottom: 110px; 
 }
 
 footer {
     background-color: blueviolet;
-    height: 100px;   
-    
+    height: 100px;      
 }

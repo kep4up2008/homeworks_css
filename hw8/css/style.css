@@ -5,12 +5,22 @@ body {
     
 }
 
+.container {
+    background-color: rgb(243, 197, 113);
+}
+
+.centered {
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 10px;
+    text-align: center;
+}
+
 .system {
     display: inline-block;
-    text-align: center;
     margin-top: 10px;
-    width: 393px;
-    border: 2px solid  rgb(243, 197, 113);
+    padding: 5px;
+    border: 2px solid transparent;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -22,30 +32,18 @@ p {
     color: darkred;
     margin: 5px;
 }
-.centered {
-    margin: 0 auto;
-    width: 900px;
-    padding-top: 10px;
-    text-align: center;
-}
-
-.main {
-    background-color: rgb(243, 197, 113);
-}
-
 img {
-    margin-top: 5px;
     border: 2px solid darkred;
-    border-radius: 50%/50%;
-    -webkit-border-radius: 50%/50%;
-    -moz-border-radius: 50%/50%;
-    -ms-border-radius: 50%/50%;
-    -o-border-radius: 50%/50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .system:hover {
     background-color: rgb(243, 180, 63);
-    text-decoration: darkred underline;
-    -moz-text-decoration-line: darkred underline;
-    border: 2px solid darkred
+    text-decoration: underline darkred;
+    -moz-text-decoration-line: underline darkred;
+    border: 2px solid darkred;
 }

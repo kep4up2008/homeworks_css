@@ -30,8 +30,12 @@ ul li  {
     vertical-align: -5px;
 }
 
+ul li+li {
+    border-left: 1px solid red;
+}
+
 ul li:hover {
-    background-color: rgb(240, 225, 23);
+    background-color: rgb(240, 225, 23);   
 }
 
 main {
@@ -44,19 +48,17 @@ main {
     z-index: -1;
  }
 section {
-    width: 250px;
+    width: 200px;
 }
 
-ol {
-    
+ol {    
     margin-bottom: 1em;
     margin-top: 1em;
     list-style: none;
     counter-reset: menu;    
 }
 
-ol li {
-    
+ol li {    
     margin-bottom: 5px;
     border-radius: 4px;
     background-color: lightblue;
@@ -69,9 +71,7 @@ ol li {
 }
 
 ol li:hover {
-    background-color: red;
-    
-    
+    background-color: red;       
 }
 
 ol li::before {
@@ -79,8 +79,7 @@ ol li::before {
     counter-increment: menu;
     content: counter(menu);
     color: white;
-    background-color: blue;
-    vertical-align: middle;
+    background-color: darkgoldenrod;    
     padding: 0 5px;
     border-left: 3px brown solid;
     border-radius: 4px;
@@ -90,9 +89,8 @@ ol li::before {
     -o-border-radius: 4px;
 }
 
-ol li::after {
+ol li:hover::after {
     content: "  " url(../img/star.png);
-    visibility: hidden;
 }
 
 ol li::after:hover {
@@ -102,9 +100,6 @@ ol li::after:hover {
 footer {
     border-top: 1px dashed brown;
     height: 50px;   
-    vertical-align: middle;
-    background-color: lightgrey;
+    padding: 10px 0;
+    
 }
-
-
-

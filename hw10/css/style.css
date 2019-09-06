@@ -19,11 +19,9 @@ header, main, footer {
 
 
 nav {
-   /* margin: 5px 20px 0 20px;*/
     height: 40px;
     border-top: 1px dashed brown; 
-    border-bottom: 1px dashed brown; 
-    
+    border-bottom: 1px dashed brown;     
 }
 
 ul li  {
@@ -49,17 +47,17 @@ section {
     width: 250px;
 }
 
-
 ol {
     
     margin-bottom: 1em;
     margin-top: 1em;
-    list-style: none outside;
+    list-style: none;
     counter-reset: menu;    
 }
 
 ol li {
-    margin-bottom: 2px;
+    
+    margin-bottom: 5px;
     border-radius: 4px;
     background-color: lightblue;
     -webkit-border-radius: 4px;
@@ -67,37 +65,44 @@ ol li {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     text-transform: uppercase;     
-    border-left: 3px brown solid;   
+    /*border-left: 3px brown solid;   */
 }
 
-.list:hover:hover {
+ol li:hover {
+    background-color: red;
     
-    visibility:hidden;
     
 }
 
 ol li::before {
-    margin-right: 5px;
+    margin-right: 10px;
     counter-increment: menu;
-    padding-left: 5px;
-    
-    content: counter(menu) " ";
+    content: counter(menu);
     color: white;
-    background-color: blue;   
-    text-align: center;
+    background-color: blue;
+    vertical-align: middle;
+    padding: 0 5px;
+    border-left: 3px brown solid;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 ol li::after {
     content: "  " url(../img/star.png);
-    visibility: 
+    visibility: hidden;
 }
 
-
+ol li::after:hover {
+    visibility: visible;
+}
 
 footer {
     border-top: 1px dashed brown;
     height: 50px;   
-    vertical-align: text-bottom;
+    vertical-align: middle;
     background-color: lightgrey;
 }
 

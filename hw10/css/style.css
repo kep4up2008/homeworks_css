@@ -9,23 +9,26 @@
     padding: 0;
 }
 
-h1 {
-    margin-left: 20px;
+header, main, footer {
+   
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+       
 }
+
+
 nav {
-    margin: 5px 20px 0 20px;
+   /* margin: 5px 20px 0 20px;*/
     height: 40px;
     border-top: 1px dashed brown; 
     border-bottom: 1px dashed brown; 
     
 }
 
-
-
 ul li  {
     display: inline-block;
     padding: 0 5px;
-   
     vertical-align: -5px;
 }
 
@@ -33,45 +36,7 @@ ul li:hover {
     background-color: rgb(240, 225, 23);
 }
 
-ol {
-   /* margin-left: 2em;*/
-    margin-bottom: 1em;
-    margin-top: 1em;
-    counter-reset: menu;
-    list-style: none;
-}
-
-ol li {
-    margin-bottom: 2px;
-    border-radius: 4px;
-    background-color: rgb(181, 181, 247);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    text-transform: uppercase;
-    padding-left: 3px;
-    
-}
-
-ol li::before {
-   /*margin-right: .1em;*/
-    counter-increment: menu;
-
-    content: counter(menu) " ";
-    color: blue;
-    background-color: violet;
-    border-left: 2px solid brown; 
-}
-
-footer {
-    margin: 0 20px;
-    border-top: 1px dashed brown;
-    height: 50px;
-    
-}
-
-section {
+main {
     min-height: 100vh;
     margin-top: -100px;
     padding-top: 100px;
@@ -79,10 +44,61 @@ section {
     margin-bottom: -50px;     
     position: relative;
     z-index: -1;
-    width: 200px;
+ }
+section {
+    width: 250px;
 }
 
-footer p {
-    display: block;
-    vertical-align: - 10px;
+
+ol {
+    
+    margin-bottom: 1em;
+    margin-top: 1em;
+    list-style: none outside;
+    counter-reset: menu;    
 }
+
+ol li {
+    margin-bottom: 2px;
+    border-radius: 4px;
+    background-color: lightblue;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-transform: uppercase;     
+    border-left: 3px brown solid;   
+}
+
+ol li:hover {
+    
+    visibility:hidden;
+    
+}
+
+ol li::before {
+    margin-right: ;
+    counter-increment: menu;
+    padding-left: 2px;
+    content: counter(menu) " ";
+    color: white;
+    background-color: blue;   
+    text-align: center;
+}
+
+ol li::after {
+    content: "  " url(../img/star.png);
+    visibility: 
+}
+
+
+
+footer {
+    border-top: 1px dashed brown;
+    height: 50px;   
+    vertical-align: text-bottom;
+    background-color: lightgrey;
+}
+
+
+

@@ -43,10 +43,9 @@ main {
     margin-top: -100px;
     padding-top: 100px;
     padding-bottom: 50px;
-    margin-bottom: -50px;     
-    position: relative;
-    z-index: -1;
- }
+    margin-bottom: -50px;         
+}
+
 section {
     width: 200px;
 }
@@ -58,30 +57,34 @@ ol {
     counter-reset: menu;    
 }
 
-ol li {    
-    margin-bottom: 5px;
+li span {
+    display: inline-block;
+    height: 27px;
+    margin-bottom: 3px;
+    width: 170px;
+    padding-left: 4px;
     border-radius: 4px;
+    border-left: 2px solid white;
     background-color: lightblue;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    text-transform: uppercase;     
-    /*border-left: 3px brown solid;   */
+    text-transform: uppercase;
+    color: rgba(0, 0, 255);
 }
 
-ol li:hover {
-    background-color: red;       
-}
 
 ol li::before {
-    margin-right: 10px;
+    
+    margin-right: ;
     counter-increment: menu;
     content: counter(menu);
     color: white;
-    background-color: darkgoldenrod;    
+    background-color: rgb(20, 94, 255);    
     padding: 0 5px;
     border-left: 3px brown solid;
+    border-right: 2px white solid;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -89,17 +92,23 @@ ol li::before {
     -o-border-radius: 4px;
 }
 
-ol li:hover::after {
-    content: "  " url(../img/star.png);
+li span:hover {
+    background-color: rgb(44, 182, 228);
 }
 
-ol li::after:hover {
-    visibility: visible;
+li span:hover::after {
+    content: "  " url(../img/star.png);
+    
+}
+
+
+ol li:hover::before {
+    background-color: rgb(53, 111, 236);  
+    border-left-color: red;   
 }
 
 footer {
     border-top: 1px dashed brown;
     height: 50px;   
-    padding: 10px 0;
-    
+    padding: 10px 0;    
 }

@@ -10,18 +10,16 @@
 }
 
 header, main, footer {
-   
     min-width: 400px;
     max-width: 800px;
-    margin: 0 auto;
-       
+    margin: 0 auto;       
 }
-
 
 nav {
     height: 40px;
     border-top: 1px dashed brown; 
     border-bottom: 1px dashed brown;     
+    margin: 15px 0;
 }
 
 ul li  {
@@ -39,25 +37,19 @@ ul li:hover {
 }
 
 main {
-    min-height: 100vh;
-    margin-top: -100px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: -50px;         
+    min-height: calc(100vh - 175px);       
 }
 
 section {
     width: 200px;
 }
 
-ol {    
-    margin-bottom: 1em;
-    margin-top: 1em;
+.side_menu {    
     list-style: none;
     counter-reset: menu;    
 }
 
-li span {
+.side_menu span {
     display: inline-block;
     height: 27px;
     margin-bottom: 3px;
@@ -74,10 +66,7 @@ li span {
     color: rgba(0, 0, 255);
 }
 
-
-ol li::before {
-    
-    margin-right: ;
+.side_menu li::before {    
     counter-increment: menu;
     content: counter(menu);
     color: white;
@@ -92,17 +81,15 @@ ol li::before {
     -o-border-radius: 4px;
 }
 
-li span:hover {
+li:hover span {
     background-color: rgb(44, 182, 228);
 }
 
-li span:hover::after {
-    content: "  " url(../img/star.png);
-    
+li:hover span::after {
+    content: "  " url(../img/star.png);    
 }
 
-
-ol li:hover::before {
+.side_menu li:hover::before {
     background-color: rgb(53, 111, 236);  
     border-left-color: red;   
 }

@@ -73,47 +73,22 @@ tr:nth-child(4), tr:nth-child(5)  {
     max-width: 900px;
     margin: 20px auto; 
     border-spacing: 20px 0; 
-    
-    
-    /*border: 2px solid red;*/
-   
-}
-
-.row {
-    display: table-row;
-}
-
-.th, .td {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    padding: 4px; 
-    min-width: 200px;
-    border-bottom: 1px solid rgb(184, 184, 184);
-    border-right: 1px solid grey;
-    border-left: 1px solid grey;
-}
-
-.th {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(255, 218, 10);
-    border-top: 1px solid grey;
 }
 
 .td {
+    display: table-cell;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
     font-size: 12px;
+    min-width: 200px;
+    /*border-bottom: 1px solid rgb(184, 184, 184);*/
+    border: 1px solid grey;
+    /*border-left: 1px solid grey;
+    border-top: 1px solid grey;*/
 }
 
-.td span{
-    font-size: 25px;
-    color: rgb(255, 218, 10);
-    font-weight: bold;
-}
-
-.td input {
+li input {
     background-color: rgb(74, 116, 206);
     color: white;
     font-weight: bold;
@@ -126,12 +101,28 @@ tr:nth-child(4), tr:nth-child(5)  {
     -o-border-radius: 5px;
 }
 
-.row:nth-child(4), .row:nth-child(5)  {
+li:first-child {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 218, 10);   
+    padding: 10px; 
+}
+
+li span{
+    font-size: 25px;
+    color: rgb(255, 218, 10);
+    font-weight: bold;
+}
+
+
+li:nth-child(4), li:nth-child(5)  {
     background-color: rgb(216, 216, 216);
     font-weight: bold;
 }
 
-.row:last-child .td {
-    border-bottom: 1px solid grey;
+li:nth-child(n+2) {
+    border-top: 1px solid rgb(184, 184, 184);
+    padding: 8px; 
 }
-

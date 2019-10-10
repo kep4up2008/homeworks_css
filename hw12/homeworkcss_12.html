@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homeworkcss_12</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Регистрационная карточка посетителя библиотеки</h1>
+    <form action="request.php" method="POST" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <fieldset class="main_inform">
+                <legend>Контактные данные</legend>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 40%">ФИО</td>
+                        <td><input type="text" name="visitor" size="30" value="" style="" placeholder="Введите ФИО" required></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40%">E-mail</td>
+                        <td><input type="email" name="e-mail" value="" size="30" style="" placeholder="Введите e-mail" required></td>
+                    </tr>
+                    <tr>    
+                        <td style="width: 40%">Пароль</td>
+                        <td><input type="password" name="password" value="" size="15" placeholder="введите пароль" required></td>
+                    </tr>
+                    <tr>    
+                        <td style="width: 40%">Адрес сайта</td>
+                        <td><input type="text" name="website" size="30" value="http://"></td>
+                    </tr>
+                    <tr>    
+                        <td style="width: 40%">Номер телефона</td>
+                        <td><input type="tel" name="phone" required></td>
+                    </tr>
+                </table>         
+            </fieldset>
+            <fieldset class="add_inform">
+                <legend>Дополнительные данные</legend>
+                <table style="width: 100%;">
+                    <tr>    
+                        <td style="width: 40%"><label for="gender">Пол</label></td>
+                        <td><select name="gender[]" id="gender">
+                                <option value="male" selected>Мужчина</option>
+                                <option value="female">Женщина</option>
+                            </select> 
+                        </td>
+                    </tr>                            
+                    <tr>    
+                        <td style="width: 40%">Дата рождения</td>
+                        <td><input type="date" name="birthdate"></td>
+                    </tr>  
+                    <tr>    
+                        <td style="width: 40%">О себе</td>
+                        <td><textarea name="about visitor" cols="20" rows="1" wrap="soft" placeholder="Напишите о себе"></textarea></td>
+                    </tr>                
+                </table>
+            </fieldset>
+            <fieldset class="preferences">
+                <legend>Предпочтения в литературе</legend>
+                <input type="checkbox" name="checkbox[]" value="classic"> Классическая литература<br>
+                <input type="checkbox" name="checkbox[]" value="scienic" checked> Научная литература<br>
+                <input type="checkbox" name="checkbox[]" value="adventure"> Приключенческая литература<br>
+                <input type="checkbox" name="checkbox[]" value="love story"> Любовные романы<br>
+            </fieldset>
+            <fieldset class="consent_box">
+                <legend>Соглаcны ли Вы с правилами сайта?</legend>
+                <input type="radio" name="consent" value="Yes" checked> Да<br>
+                <input type="radio" name="concent" value="No"> Нет
+            </fieldset>
+            <fieldset class="send_box">
+                <legend>Отправка формы</legend>
+                <input type="submit" value="Зарегистрироваться">
+                <input type="reset" value="Очистить форму">
+            </fieldset>               
+        </fieldset>
+    </form>
+</body>
+</html>

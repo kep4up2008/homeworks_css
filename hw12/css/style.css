@@ -1,0 +1,33 @@
+form {
+    max-width: 50%;
+}
+
+legend {
+    padding: 2px 5px;
+    font-style: italic;
+    font-size: 12pt;
+    border: double 1px blue ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    
+}
+
+fieldset {
+    margin: 20px;
+    background-color: lightblue;
+}
+
+.send_box legend {
+  
+}
+
+.main_inform input {
+
+    box-shadow: -5px 5px 10px lightcoral;
+}

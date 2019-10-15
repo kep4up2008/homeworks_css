@@ -15,6 +15,7 @@ fieldset {
     margin: 20px;
     background-color: lightblue;
     border: solid 1px blue;  
+    box-shadow: 10px 10px 5px gray;
 }
 
 legend {

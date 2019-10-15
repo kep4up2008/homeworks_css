@@ -13,28 +13,20 @@
         <fieldset id="main">
             <fieldset class="main_inform">
                 <legend>Контактные данные</legend>
-                <table style="width: 100%;">
-                    <tr>
-                        <td style="width: 40%">ФИО</td>
-                        <td><input type="text" name="visitor" size="30" value="" style="" placeholder="Введите ФИО" required></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 40%">E-mail</td>
-                        <td><input type="email" name="e-mail" value="" size="30" style="" placeholder="Введите e-mail" required></td>
-                    </tr>
-                    <tr>    
-                        <td style="width: 40%">Пароль</td>
-                        <td><input type="password" name="password" value="" size="15" placeholder="введите пароль" required></td>
-                    </tr>
-                    <tr>    
-                        <td style="width: 40%">Адрес сайта</td>
-                        <td><input type="text" name="website" size="30" value="http://"></td>
-                    </tr>
-                    <tr>    
-                        <td style="width: 40%">Номер телефона</td>
-                        <td><input type="tel" name="phone" required></td>
-                    </tr>
-                </table>         
+                <ul class="td">
+                    <li><label for="visitor">ФИО</label></li>
+                    <li><label for="e-mail">E-mail</label></li>
+                    <li><label for="password">Пароль</label></li>
+                    <li><lable for="website">Адрес сайта</lable></li>
+                    <li><lable for="phone">Номер телефона</lable></li>
+                </ul>
+                <ul class="td">
+                    <li><input type="text" name="visitor" size="30" value="" placeholder="Введите ФИО" required></li>
+                    <li><input type="email" name="e-mail" value="" size="30" style="" placeholder="Введите e-mail" required></li>
+                    <li><input type="password" name="password" value="" size="15" placeholder="введите пароль" required></li>
+                    <li><input type="text" name="website" size="30" value="http://"></li>
+                    <li><input type="tel" name="phone" required></li>
+                </ul>                       
             </fieldset>
             <fieldset class="add_inform">
                 <legend>Дополнительные данные</legend>
@@ -59,20 +51,38 @@
             </fieldset>
             <fieldset class="preferences">
                 <legend>Предпочтения в литературе</legend>
-                <label for="checkbox1"></label>
-                <input type="checkbox" name="checkbox[]" value="classic" id="checkbox1"> Классическая литература<br>
-                <label for="checkbox2"></label>
-                <input type="checkbox" name="checkbox[]" value="scienic" id="checkbox2" checked> Научная литература<br>
-                <label for="checkbox3"></label>
-                <input type="checkbox" name="checkbox[]" value="adventure" id="checkbox3"> Приключенческая литература<br>
-                <label for="checkbox4"></label>
-                <input type="checkbox" name="checkbox[]" value="love story" id="checkbox4"> Любовные романы<br>
-                
+                <div>
+                    <input type="checkbox" name="checkbox[]" value="classic" id="check1">
+                    <label for="check1"></label> Классическая литература
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox[]" value="scienic" id="check2" checked>
+                    <label for="check2"></label> Научная литература
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox[]" value="adventure" id="check3"> 
+                    <label for="check3"></label> Приключенческая литература
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox[]" value="love story" id="check4">
+                    <label for="check4"></label> Любовные романы<br>
+                </div>
             </fieldset>
             <fieldset class="consent_box">
                 <legend>Соглаcны ли Вы с правилами сайта?</legend>
-                <input type="radio" name="consent" value="Yes"> Да<br>
-                <input type="radio" name="concent" value="No"> Нет
+                <div>
+                    <label class="radio">
+                        <input name="consent" type="radio" value="Yes" checked>
+                        <span></span> Да
+                    </label>                    
+                </div>
+                <div>
+                    <label class="radio">
+                        <input name="consent" type="radio" value="No"> 
+                        <span></span> Нет
+                    </label>
+                    
+                </div>
             </fieldset>
             <fieldset class="send_box">
                 <legend>Отправка формы</legend>

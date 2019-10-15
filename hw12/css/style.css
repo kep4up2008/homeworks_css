@@ -1,12 +1,47 @@
+:root {
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    }
+
 form {
-    max-width: 50%;
+    max-width: 50%;    
+}
+
+fieldset {
+    margin: 20px;
+    background-color: lightblue;
+    border: solid 1px blue;
+    
+}
+
+textarea {
+    font-family: inherit;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: lightgrey;
+    box-shadow: -2px -2px 1px darkgrey;
+    color: brown;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#main {
+    box-shadow: inset 5px 5px 2px whitesmoke, inset -5px -5px 2px 2px whitesmoke;
 }
 
 legend {
+    margin-left:10px;
     padding: 2px 5px;
     font-style: italic;
     font-size: 12pt;
-    border: double 1px blue ;
+    border: solid 1px blue ;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -15,19 +50,53 @@ legend {
     background-color: yellow;
     color: red;
     font-weight: bold;
+    text-align: right;
+}
+
+input:required {
+    background-color: lightsalmon;
     
 }
 
-fieldset {
-    margin: 20px;
-    background-color: lightblue;
+
+
+input:valid:required {
+    background-color: lightgreen;  	
 }
 
-.send_box legend {
-  
+/*\2713*/
+.add_inform {
+    display: table;
 }
 
-.main_inform input {
+.td {
+    display: table-cell;
+    list-style-type: none;
+    
+    text-align: left;
+    min-width: 30%;
+    padding: 5px 0;
+}
 
-    box-shadow: -5px 5px 10px lightcoral;
+.td li {
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+/*.preferences input {
+    display: none;
+}*/
+
+.preferences label {
+    
+    height: 15px;
+    width: 15px;
+    border: 2px solid grey;
+    background-color: darkgrey;
+    display: inline-block;
+}
+
+.preferences input:checked+label {
+    display: inline-block;
+    border-color: red;
 }

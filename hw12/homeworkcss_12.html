@@ -10,7 +10,7 @@
 <body>
 <h1>Регистрационная карточка посетителя библиотеки</h1>
     <form action="request.php" method="POST" enctype="application/x-www-form-urlencoded">
-        <fieldset>
+        <fieldset id="main">
             <fieldset class="main_inform">
                 <legend>Контактные данные</legend>
                 <table style="width: 100%;">
@@ -38,35 +38,40 @@
             </fieldset>
             <fieldset class="add_inform">
                 <legend>Дополнительные данные</legend>
-                <table style="width: 100%;">
-                    <tr>    
-                        <td style="width: 40%"><label for="gender">Пол</label></td>
-                        <td><select name="gender[]" id="gender">
-                                <option value="male" selected>Мужчина</option>
-                                <option value="female">Женщина</option>
-                            </select> 
-                        </td>
-                    </tr>                            
-                    <tr>    
-                        <td style="width: 40%">Дата рождения</td>
-                        <td><input type="date" name="birthdate"></td>
-                    </tr>  
-                    <tr>    
-                        <td style="width: 40%">О себе</td>
-                        <td><textarea name="about visitor" cols="20" rows="1" wrap="soft" placeholder="Напишите о себе"></textarea></td>
-                    </tr>                
-                </table>
+                <ul class="td">
+                    <li><label for="gender">Пол</label></li>
+                    <li><label for="birthdate">Дата рождения</label></li>
+                    <li><label for="about visitor">О себе</label></li>
+                </ul>
+                <ul class="td">
+                    <li><select name="gender[]" id="gender">
+                            <option value="male" selected>Мужчина</option>
+                            <option value="female">Женщина</option>
+                        </select> 
+                    </li>
+                    <li>
+                        <input type="date" name="birthdate">
+                    </li>
+                    <li>
+                        <textarea name="about visitor" cols="20" rows="1" wrap="soft" placeholder="Напишите о себе"></textarea>                
+                    </li>
+                </ul>                    
             </fieldset>
             <fieldset class="preferences">
                 <legend>Предпочтения в литературе</legend>
-                <input type="checkbox" name="checkbox[]" value="classic"> Классическая литература<br>
-                <input type="checkbox" name="checkbox[]" value="scienic" checked> Научная литература<br>
-                <input type="checkbox" name="checkbox[]" value="adventure"> Приключенческая литература<br>
-                <input type="checkbox" name="checkbox[]" value="love story"> Любовные романы<br>
+                <label for="checkbox1"></label>
+                <input type="checkbox" name="checkbox[]" value="classic" id="checkbox1"> Классическая литература<br>
+                <label for="checkbox2"></label>
+                <input type="checkbox" name="checkbox[]" value="scienic" id="checkbox2" checked> Научная литература<br>
+                <label for="checkbox3"></label>
+                <input type="checkbox" name="checkbox[]" value="adventure" id="checkbox3"> Приключенческая литература<br>
+                <label for="checkbox4"></label>
+                <input type="checkbox" name="checkbox[]" value="love story" id="checkbox4"> Любовные романы<br>
+                
             </fieldset>
             <fieldset class="consent_box">
                 <legend>Соглаcны ли Вы с правилами сайта?</legend>
-                <input type="radio" name="consent" value="Yes" checked> Да<br>
+                <input type="radio" name="consent" value="Yes"> Да<br>
                 <input type="radio" name="concent" value="No"> Нет
             </fieldset>
             <fieldset class="send_box">

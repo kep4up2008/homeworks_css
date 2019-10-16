@@ -1,6 +1,7 @@
 :root {
     font-size: 12pt;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 *, ::before, ::after {
     box-sizing: inherit;
@@ -35,7 +36,7 @@ legend {
     text-align: right;
 }
 
-textarea {
+textarea, select, input[type="date"] {
     font-family: inherit;
     font-size: 0.7em;
     text-align: center;
@@ -71,7 +72,7 @@ input:valid:required {
 
 .preferences div, .consent_box div {
     
-    padding-left: 10px;
+    padding: 3px 0 0 10px;
     margin-top: 10px;
     height: 30px;
     vertical-align: middle;
@@ -87,24 +88,28 @@ input:valid:required {
 }
 
 .send_box {
-
+    text-align: center;
 }
 
 .send_box legend {
     text-align: center;
 }
 
+.table {
+    display: table;
+    width: 100%;
+}
+
 .td {
     display: table-cell;
     list-style-type: none;    
-    
-    min-width: 30%;
+    width: 50%;
     padding: 5px 0;
 }
 
 .td li {
-    padding-bottom: 10px;
-    vertical-align: bottom;
+    
+    vertical-align: middle;
     min-height: 35px;
 }
 
@@ -127,6 +132,7 @@ input:valid:required {
     color: red;
     border-color: red;
     background-color: white;
+    font-weight: bold;
 }
 
 .preferences input:checked+label::before {
@@ -162,12 +168,56 @@ input:valid:required {
     background-color: green;
 }
 
-.preferences input:checked+label::before {
-    display: inline-block;
-    content: "✓";
-    height: 15px;
+/*стилизация кнопок submit & reset*/
+
+input[type="submit"] {
+    cursor: pointer;
+    color:chartreuse;
+    background-color: royalblue;
+    border: 3px solid greenyellow;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 20px 5px 30px 20px;
+    -webkit-border-radius: 20px 5px 30px 20px;
+    -moz-border-radius: 20px 5px 30px 20px;
+    -ms-border-radius: 20px 5px 30px 20px;
+    -o-border-radius: 20px 5px 30px 20px;
+    margin: 20px;
+    
 }
 
-/*стилизация кнопок submit & reset*/
+input[type="submit"]:hover {
+    color:rgb(4, 0, 255);     
+    background-color: aqua;    
+}
+
+input[type="submit"]:active {
+    box-shadow: 10px -10px 7px  rgb(32, 119, 218); 
+}
+
+input[type="reset"] {
+    cursor: pointer;
+    color:chartreuse;
+    background-color: tomato;
+    border: 3px solid greenyellow;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 30px 20px 20px 5px;
+    -webkit-border-radius: 30px 20px 20px 5px;
+    -moz-border-radius: 30px 20px 20px 5px;
+    -ms-border-radius: 30px 20px 20px 5px;
+    -o-border-radius: 30px 20px 20px 5px;
+    margin: 20px;
+}
+
+input[type="reset"]:hover {
+    color:rgb(4, 0, 255);
+    
+    background-color: firebrick;    
+}
+
+input[type="reset"]:active {
+    box-shadow: -10px 10px 7px  goldenrod;  
+}
 
 

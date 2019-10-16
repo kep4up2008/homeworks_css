@@ -13,41 +13,45 @@
         <fieldset id="main">
             <fieldset class="main_inform">
                 <legend>Контактные данные</legend>
-                <ul class="td">
-                    <li><label for="visitor">ФИО</label></li>
-                    <li><label for="e-mail">E-mail</label></li>
-                    <li><label for="password">Пароль</label></li>
-                    <li><lable for="website">Адрес сайта</lable></li>
-                    <li><lable for="phone">Номер телефона</lable></li>
-                </ul>
-                <ul class="td">
-                    <li><input type="text" name="visitor" size="30" value="" placeholder="Введите ФИО" required></li>
-                    <li><input type="email" name="e-mail" value="" size="30" style="" placeholder="Введите e-mail" required></li>
-                    <li><input type="password" name="password" value="" size="15" placeholder="введите пароль" required></li>
-                    <li><input type="text" name="website" size="30" value="http://"></li>
-                    <li><input type="tel" name="phone" required></li>
-                </ul>                       
+                <div class="table">
+                    <ul class="td">
+                        <li><label for="visitor">ФИО</label></li>
+                        <li><label for="e-mail">E-mail</label></li>
+                        <li><label for="password">Пароль</label></li>
+                        <li><lable for="website">Адрес сайта</lable></li>
+                        <li><lable for="phone">Номер телефона</lable></li>
+                    </ul>
+                    <ul class="td">
+                        <li><input type="text" name="visitor" size="30" value="" placeholder="Введите ФИО" required></li>
+                        <li><input type="email" name="e-mail" value="" size="30" style="" placeholder="Введите e-mail" required></li>
+                        <li><input type="password" name="password" value="" size="15" placeholder="введите пароль" required></li>
+                        <li><input type="text" name="website" size="30" value="http://"></li>
+                        <li><input type="tel" name="phone" required></li>
+                    </ul>  
+                </div>                     
             </fieldset>
             <fieldset class="add_inform">
                 <legend>Дополнительные данные</legend>
-                <ul class="td">
-                    <li><label for="gender">Пол</label></li>
-                    <li><label for="birthdate">Дата рождения</label></li>
-                    <li><label for="about visitor">О себе</label></li>
-                </ul>
-                <ul class="td">
-                    <li><select name="gender[]" id="gender">
-                            <option value="male" selected>Мужчина</option>
-                            <option value="female">Женщина</option>
-                        </select> 
-                    </li>
-                    <li>
-                        <input type="date" name="birthdate">
-                    </li>
-                    <li>
-                        <textarea name="about visitor" cols="20" rows="1" wrap="soft" placeholder="Напишите о себе"></textarea>                
-                    </li>
-                </ul>                    
+                <div class="table">
+                    <ul class="td">
+                        <li><label for="gender">Пол</label></li>
+                        <li><label for="birthdate">Дата рождения</label></li>
+                        <li><label for="about visitor">О себе</label></li>
+                    </ul>
+                    <ul class="td">
+                        <li><select name="gender[]" id="gender">
+                                <option value="male" selected>Мужчина</option>
+                                <option value="female">Женщина</option>
+                            </select> 
+                        </li>
+                        <li>
+                            <input type="date" name="birthdate">
+                        </li>
+                        <li>
+                            <textarea name="about visitor" cols="20" rows="1" wrap="soft" placeholder="Напишите о себе"></textarea>                
+                        </li>
+                    </ul>
+                </div>                    
             </fieldset>
             <fieldset class="preferences">
                 <legend>Предпочтения в литературе</legend>
@@ -86,8 +90,8 @@
             </fieldset>
             <fieldset class="send_box">
                 <legend>Отправка формы</legend>
-                <input type="submit" value="Зарегистрироваться">
-                <input type="reset" value="Очистить форму">
+                <input type="submit" value="Регистрация">
+                <input type="reset" value="Отменить">
             </fieldset>               
         </fieldset>
     </form>

@@ -97,6 +97,7 @@ input:default+label, option:default {
     text-align: center;
 }
 
+
 .add_inform {
     display: table;
 }
@@ -114,7 +115,6 @@ input:default+label, option:default {
 }
 
 .td li {
-    
     vertical-align: middle;
     min-height: 35px;
 }
@@ -127,8 +127,7 @@ input:default+label, option:default {
 .preferences label{
     display: inline-block;
     cursor: pointer;
-    vertical-align: middle;
-    
+    vertical-align: middle;    
 }
 
 .preferences label::before{
@@ -139,6 +138,7 @@ input:default+label, option:default {
     cursor: pointer;
     vertical-align: middle;    
     display: inline-block;
+    content: "";
 }
 
 .preferences input:checked+label::before {
@@ -159,6 +159,7 @@ input:default+label, option:default {
 .consent_box label {
     display: inline-block;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .consent_box label::before {
@@ -174,11 +175,14 @@ input:default+label, option:default {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    content: "";
+    vertical-align: middle;
 }
 
 .consent_box input:checked+label::before {
     border: 4px solid yellow;
     background-color: green;
+    content: "";
 }
 
 /*стилизация кнопок submit & reset*/

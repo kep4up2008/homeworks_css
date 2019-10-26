@@ -1,0 +1,81 @@
+:root {
+    font-size: 12pt;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	text-align: center;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+.button {
+	display: inline-block;
+	margin: 40px;
+	width: 150px;
+	height: 150px;
+	border: 5px solid red;
+	border-radius: 50%;
+	
+	text-align: center;
+	font-size: 60px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+label {
+	display: inline-block;
+	background-color: lightgray;
+	width: 100%;
+	height: 100%;	
+	padding: 20px 0 20px 0;
+	border: 5px solid transparent;
+	border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+}
+
+#check1, #check2 {
+	display: none;
+}
+
+#check1+#check2~label[for="check1"]::before {
+	color: blue;
+	content: "1";
+}
+
+#check1+#check2~label[for="check2"] {
+	display: none;
+}
+
+#check1:checked+#check2~label[for="check2"]::before {
+	color: green;
+	content: "2";
+}
+
+#check1:checked+#check2~label[for="check1"] {
+	display: none;
+}
+
+#check1:checked+#check2:checked~label[for="check1"]::before {
+	color: red;
+	content: "3";
+}
+
+#check1:checked+#check2:checked~label[for="check2"] {
+	display: none;
+}
+
+#check1+#check2:checked~label[for="check2"]::before {
+	color: yellow;
+	content: "4";
+}
+
+#check1+#check2:checked~label[for="check1"] {
+	display: none;
+}

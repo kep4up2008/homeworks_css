@@ -22,7 +22,7 @@ body {
 	border-radius: 50%;
 	
 	text-align: center;
-	font-size: 60px;
+	font-size: 80px;
 	vertical-align: middle;
 	cursor: pointer;
 }
@@ -32,7 +32,7 @@ label {
 	background-color: lightgray;
 	width: 100%;
 	height: 100%;	
-	padding: 20px 0 20px 0;
+	padding-top: 20px;
 	border: 5px solid transparent;
 	border-radius: 50%;
 	vertical-align: middle;
@@ -44,6 +44,10 @@ label {
 	display: none;
 }
 
+#check1+#check2~label[for="check1"] {
+	display: inline-block;	
+}
+
 #check1+#check2~label[for="check1"]::before {
 	color: blue;
 	content: "1";
@@ -51,6 +55,10 @@ label {
 
 #check1+#check2~label[for="check2"] {
 	display: none;
+}
+
+#check1:checked+#check2~label[for="check2"] {
+	display: inline-block;
 }
 
 #check1:checked+#check2~label[for="check2"]::before {
@@ -62,6 +70,10 @@ label {
 	display: none;
 }
 
+#check1:checked+#check2:checked~label[for="check1"] {
+	display: inline-block;
+}
+
 #check1:checked+#check2:checked~label[for="check1"]::before {
 	color: red;
 	content: "3";
@@ -69,6 +81,10 @@ label {
 
 #check1:checked+#check2:checked~label[for="check2"] {
 	display: none;
+}
+
+#check1+#check2:checked~label[for="check2"] {
+	display: inline-block;
 }
 
 #check1+#check2:checked~label[for="check2"]::before {

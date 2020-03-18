@@ -20,68 +20,75 @@
 
 body {
     background-color: lightskyblue;
-    margin: 0 auto;
-    width: 80%;
     text-align: center; 
 }
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px whitesmoke double;
+}
 .photo {
-    background-color: #fff;
+    background-color: lemonchiffon;
     display: inline-block;
     border: solid 2px darkgrey;
-    height: 230px;
-    width: 254px;
+    /*height: 230px;*/
+    width: 250px;
     margin-left: 25px;
     margin-top: 25px;
     /*box-shadow: 5px 8px 10px yellow; */
 }
-#f1 {
+
+.photo img {
+    margin: 20px 10px 15px 10px;
+    width: 80%;
+    height: auto;
+}
+
+.photo figcaption {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.photo:nth-child(9n) {
     filter: brightness(.45) opacity(.45) hue-rotate(30deg);
     -webkit-filter: brightness(.45) opacity(.45) hue-rotate(30deg);
 }
-#f2 {
-    filter: opacity(.5) sepia(68%);
-    -webkit-filter: opacity(.5) sepia(68%);
-}
-
-#f3 {
+.photo:nth-child(9n+1) {
     filter: contrast(50%) invert(80%);
     -webkit-filter: contrast(50%) invert(80%);
 }
 
-#f4 {
-    filter:hue-rotate(250deg) opacity(.42);
-    -webkit-filter:hue-rotate(250deg) opacity(.42);
+.photo:nth-child(9n+2) {
+    filter: opacity(.5) sepia(68%);
+    -webkit-filter: opacity(.5) sepia(68%);
 }
-#f5 {
-    filter: saturate(4.6) opacity(.8);
-    -webkit-filter: saturate(4.6) opacity(.8);
-}
-#f6 {
-    filter: grayscale(85%);
-    -webkit-filter: grayscale(85%);
-}
-#f7 {
-    filter: drop-shadow(5px 5px 10px green) invert(.4);
-    -webkit-filter: drop-shadow(5px 5px 10px green) invert(.4);
-}
-#f8 {
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-}
-#f9 {
+.photo:nth-child(9n+3) {
     filter: sepia(1);
     -webkit-filter: sepia(1);
 }
-.img_text {
-    font-size: 30px;
-    text-align: center;  
+.photo:nth-child(9n+4) {
+    filter:hue-rotate(250deg) opacity(.42);
+    -webkit-filter:hue-rotate(250deg) opacity(.42);
+}
+.photo:nth-child(9n+5) {
+    filter: drop-shadow(5px 5px 10px green) invert(.4);
+    -webkit-filter: drop-shadow(5px 5px 10px green) invert(.4);
+}
+.photo:nth-child(9n+6) {
+    filter: saturate(4.6) opacity(.8);
+    -webkit-filter: saturate(4.6) opacity(.8);
+}
+.photo:nth-child(9n+7){
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.photo:nth-child(9n+8) {
+    filter: grayscale(85%);
+    -webkit-filter: grayscale(85%);
 }
 
-.img {
-    margin: 15px;
-}
-
-#f1:hover, #f2:hover, #f3:hover, #f4:hover, #f5:hover, #f6:hover, #f7:hover, #f8:hover, #f9:hover {
+.photo:hover {
     filter: none;
     -webkit-filter: none;
     transition: all 1s;

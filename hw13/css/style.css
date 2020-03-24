@@ -32,11 +32,9 @@ body {
     background-color: lemonchiffon;
     display: inline-block;
     border: solid 2px darkgrey;
-    /*height: 230px;*/
     width: 250px;
     margin-left: 25px;
     margin-top: 25px;
-    /*box-shadow: 5px 8px 10px yellow; */
 }
 
 .photo img {

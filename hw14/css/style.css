@@ -1,0 +1,82 @@
+:root {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscription {
+    background-image: url("../img/desert.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 700px;        
+    border: 5px dotted brown;  
+}
+
+h1{
+    padding-top: 200px;
+    color:darkgrey;
+    text-shadow: 1px 1px 1px lightseagreen;
+}
+
+.mail {
+    padding-top: 25px;
+    display: inline-block;
+}
+
+.mail input[type="email"] {
+    color: brown;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.mail input[type="submit"] {
+    color: red;
+    font-weight: bold;
+    background-color: thistle;
+    border-radius: 3px;
+    border: 1px solid red;
+    width: 100px;            
+}
+
+/*{
+    
+.bg-checkbox_unchecked {
+    width: 600px; height: 596px;
+    background: url('css_sprites.png') -645px -15px;
+}
+.bg-checkbox_checked {
+    width: 600px; height: 596px;
+    background: url('css_sprites.png') -15px -15px;
+}
+
+.bg-radio1 {
+    width: 283px; height: 283px;
+    background: url('css_sprites.png') -15px -15px;
+}
+
+.bg-radio2 {
+    width: 282px; height: 283px;
+    background: url('css_sprites.png') -328px -15px;
+}
+
+.bg-radio3 {
+    width: 283px; height: 282px;
+    background: url('css_sprites.png') -15px -328px;
+}
+
+.bg-radio4 {
+    width: 282px; height: 282px;
+    background: url('css_sprites.png') -328px -328px;
+}
+}*/

@@ -65,29 +65,56 @@ h1{
     -o-border-radius: 5px;
 }
 
-.choice {
+.choice_check {
     margin: 20px 10px 20px 0px;
-    padding: 10px 5px;    
+    padding: 7px;
     display: inline-block;
-    height: 60px;
     width: 200px;
-    vertical-align: text-bottom;
-    text-align: left;
+    height: 40px;
     border: solid 1px;
-    background-color: lightgrey;
+    text-align: left;
+    background-color: lightsteelblue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;   
 }
 
-.choice input[type="checkbox"], input[type="radio"] {
+
+
+.choice_check input[type="checkbox"] {
     display: none;
-    
 }
 
-.choice label {   
-    background: url("../img/sprites/sprite_check.png") -645px -15px;
-    background-size: 40px;
+.choice_check label {         
+    display: inline-block;
+    font-size: 20px;
+    background-image: url("../img/sprites/sprite_check.png");
+    background-position: -30px -2px;
+    background-size: 56px;
+    cursor: pointer;
     background-repeat: no-repeat;
-    background-position: left;    
-    padding-left: 25px;    
+    height: 28px;
+    width: 28px;       
+}
+
+.choice_check input[type="checkbox"]+label::after {
+    padding: 30px;
+    content: "don't_selected):";
+    text-decoration: line-through;
+    color: red;
+}
+
+.choice_check input[type="checkbox"]:checked+label {
+    background-position: -2px -2px;
+}
+
+.choice_check input:checked+label::after {
+    padding: 30px;
+    content: "selected:)";
+    text-decoration: underline;
+    color: green;
 }
 
 /*.choice input:checked+label::before {
@@ -102,14 +129,6 @@ h1{
 
 {
     
-.bg-checkbox_unchecked {
-    width: 600px; height: 596px;
-    background: url('css_sprites.png') -645px -15px;
-}
-.bg-checkbox_checked {
-    width: 600px; height: 596px;
-    background: url('css_sprites.png') -15px -15px;
-}
 
 .bg-radio1 {
     width: 283px; height: 283px;

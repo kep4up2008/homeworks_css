@@ -11,6 +11,7 @@
 body {
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .subscription {
@@ -20,7 +21,7 @@ body {
     background-size: cover;
     background-origin: content-box;
     height: 700px;        
-    border: 5px dotted brown;  
+    /*border: 5px dotted brown;  */
 }
 
 h1{
@@ -65,10 +66,16 @@ h1{
     -o-border-radius: 5px;
 }
 
-.choice_check {
-    margin: 20px 10px 20px 0px;
-    padding: 7px;
+.choice{
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+._check, ._radio {
     display: inline-block;
+    margin: 10px 10px 5px 0px;
+    padding: 7px;
     width: 200px;
     height: 40px;
     border: solid 1px;
@@ -81,41 +88,134 @@ h1{
     -o-border-radius: 15px;   
 }
 
-
-
-.choice_check input[type="checkbox"] {
+.choice input {
     display: none;
 }
 
-.choice_check label {         
+.choice input+label {         
     display: inline-block;
     font-size: 20px;
-    background-image: url("../img/sprites/sprite_check.png");
-    background-position: -30px -2px;
-    background-size: 56px;
     cursor: pointer;
-    background-repeat: no-repeat;
     height: 28px;
     width: 28px;       
 }
 
-.choice_check input[type="checkbox"]+label::after {
+/* стилзация переключателя-фоновой картинки input[type="checkbox"]*/
+.choice input[type="checkbox"]+label {
+    background-image: url("../img/sprites/sprite_check.png");
+    background-position: -30px -2px;
+    background-size: 56px;
+    background-repeat: no-repeat;
+}
+
+.choice input[type="checkbox"]:checked+label {
+    background-position: -2px -2px;
+}
+
+/* стилзация переключателя-фоновой картинки input[type="radio"]*/
+.choice input[type="radio"]+label {
+    background-image: url("../img/sprites/sprite_radio.png");
+    background-position: -30px -30px;
+    background-size: 56px;
+    background-repeat: no-repeat;
+}
+
+.choice input[type="radio"]:checked+label {
+    background-position: -2px -30px;
+}
+
+/*стилизация текста форме выбора*/
+.choice input+label::after {
     padding: 30px;
     content: "don't_selected):";
     text-decoration: line-through;
     color: red;
 }
 
-.choice_check input[type="checkbox"]:checked+label {
-    background-position: -2px -2px;
-}
 
-.choice_check input:checked+label::after {
+.choice input:checked+label::after {
     padding: 30px;
     content: "selected:)";
     text-decoration: underline;
     color: green;
 }
+
+footer {
+    background-color: lawngreen;     
+    padding: 15px 0;
+}
+
+.social {
+    
+    display: inline-block;
+    background-image: url("../img/sprites/sprites_icon.png");
+    background-repeat: no-repeat;
+    background-size: 241.5px;
+    height: 34.5px;
+    width: 34.5px;
+    margin: 0;
+    padding: 0;
+}
+
+#fb {
+    background-position: -1.25px -1.25px;  
+   
+}
+
+#fb:hover {
+    background-position: -1.25px -35.75px;
+}
+
+#git {
+    background-position: -35.75px -1.25px;  
+    margin: 0;
+    padding: 0; 
+}
+
+#git:hover {
+    background-position: -35.75px -35.75px;
+}
+
+#google {
+    background-position: -70.25px -1.25px;   
+}
+
+#google:hover {
+    background-position: -70.25px -35.75px;
+}
+
+#insta {
+    background-position: -104.75px -1.25px;   
+}
+
+#insta:hover {
+    background-position: -104.75px -35.75px;
+}
+
+#linked {
+    background-position: -139.25px -1.25px;   
+}
+
+#linked:hover {
+    background-position: -139.25px -35.75px;
+}
+
+#what_s {
+    background-position: -173.75px -1.25px;   
+}
+
+#what_s:hover {
+    background-position: -173.75px -35.75px;
+}
+
+#youtube {
+    background-position: -208.25px -1.25px;   
+}
+
+#youtube:hover {
+    background-position: -208.25px -35.75px;
+}
+
 
 /*.choice input:checked+label::before {
     color: red;

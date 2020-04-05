@@ -10,8 +10,7 @@
 
 body {
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .subscription {
@@ -52,9 +51,11 @@ h1{
     -o-border-radius: 10px;
 }
 
+/*стилизация кнопки Подписаться*/
 .mail input[type="submit"] {
     color: red;
     font-weight: bold;
+    cursor: pointer;
     background-color: thistle;
     border-radius: 5px;
     border: 2px solid red;
@@ -66,6 +67,19 @@ h1{
     -o-border-radius: 5px;
 }
 
+.mail input[type="submit"]:hover {
+    background-color: khaki;
+
+} 
+
+.mail input[type="submit"]:active {
+    box-shadow: brown 3px -3px 5px;
+    color: darkgoldenrod;
+    background-color: darkred;
+    border-color: black;
+}
+
+/* стилизация полей выбора*/
 .choice{
     margin: 0 auto;
     width: 600px;
@@ -132,7 +146,6 @@ h1{
     color: red;
 }
 
-
 .choice input:checked+label::after {
     padding: 30px;
     content: "selected:)";
@@ -140,144 +153,74 @@ h1{
     color: green;
 }
 
-footer {
+/*блок ссылок*/
+.soc {
     background-color: lawngreen;     
     padding: 15px 0;
+    margin: 0;
 }
 
-.social {
-    
+.social {    
     display: inline-block;
     background-image: url("../img/sprites/sprites_icon.png");
     background-repeat: no-repeat;
     background-size: 241.5px;
-    height: 34.5px;
-    width: 34.5px;
-    margin: 0;
-    padding: 0;
+    height: 32px;
+    width: 32px;
 }
 
-#fb {
-    background-position: -1.25px -1.25px;  
-   
+.social:nth-child(1) {
+    background-position: -1.25px -1.25px;     
 }
 
-#fb:hover {
-    background-position: -1.25px -35.75px;
+.social:hover:nth-child(1) {
+    background-position: -1.25px -35.75px;  
 }
 
-#git {
-    background-position: -35.75px -1.25px;  
-    margin: 0;
-    padding: 0; 
+.social:nth-child(2) {
+    background-position: -35.75px -1.25px; 
 }
 
-#git:hover {
+.social:hover:nth-child(2) {
     background-position: -35.75px -35.75px;
 }
 
-#google {
+.social:nth-child(3) {
     background-position: -70.25px -1.25px;   
 }
 
-#google:hover {
+.social:hover:nth-child(3) {
     background-position: -70.25px -35.75px;
 }
 
-#insta {
+.social:nth-child(4) {
     background-position: -104.75px -1.25px;   
 }
 
-#insta:hover {
+.social:hover:nth-child(4) {
     background-position: -104.75px -35.75px;
 }
 
-#linked {
+.social:nth-child(5) {
     background-position: -139.25px -1.25px;   
 }
 
-#linked:hover {
+.social:hover:nth-child(5) {
     background-position: -139.25px -35.75px;
 }
 
-#what_s {
+.social:nth-child(6) {
     background-position: -173.75px -1.25px;   
 }
 
-#what_s:hover {
+.social:hover:nth-child(6) {
     background-position: -173.75px -35.75px;
 }
 
-#youtube {
+.social:nth-child(7) {
     background-position: -208.25px -1.25px;   
 }
 
-#youtube:hover {
+.social:hover:nth-child(7) {
     background-position: -208.25px -35.75px;
 }
-
-
-/*.choice input:checked+label::before {
-    color: red;
-    border-color: red;
-    background-color: white;
-    font-weight: bold;
-    display: inline-block;
-    content: "✓";
-
-
-
-{
-    
-
-.bg-radio1 {
-    width: 283px; height: 283px;
-    background: url('css_sprites.png') -15px -15px;
-}
-
-.bg-radio2 {
-    width: 282px; height: 283px;
-    background: url('css_sprites.png') -328px -15px;
-}
-
-.bg-radio3 {
-    width: 283px; height: 282px;
-    background: url('css_sprites.png') -15px -328px;
-}
-
-.bg-radio4 {
-    width: 282px; height: 282px;
-    background: url('css_sprites.png') -328px -328px;
-}
-}
-
-.subscription div input {
-    display: none;
-}
-
-.subscription label{
-    display: inline-block;
-    width: 100%;
-    cursor: pointer;
-    vertical-align: middle;    
-}
-
-.subscription label::before{
-    width: 15px;
-    height: 20px;
-    border: 2px solid grey;
-    background-color: darkgrey;
-    cursor: pointer;
-    vertical-align: middle;    
-    display: inline-block;
-    content: "";
-}
-
-.subscription input:checked+label::before {
-    color: red;
-    border-color: red;
-    background-color: white;
-    font-weight: bold;
-    display: inline-block;
-    content: "✓";
-}*/

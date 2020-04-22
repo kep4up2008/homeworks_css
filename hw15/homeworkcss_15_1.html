@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {    
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        *, ::before, ::after {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0 auto;
+            text-align: center;    
+        }
+        .board {
+            padding: 0;
+            margin: 50px auto;
+            width: 428px;
+            height: 428px;
+            
+            border: solid 1px black;           
+            border-image: url("img/board.jpg") 20 / 15px / 1;    
+            background-image: 
+            conic-gradient(rgb(92, 47, 11) 90deg,transparent 90deg 180deg, rgb(92, 47, 11) 180deg 270deg, transparent 270deg 360deg), 
+            linear-gradient(225deg,rgb(238, 211, 137)0%,rgb(236, 166, 86) 30%,rgb(238, 211, 137) 70%);
+            background-size: 100px 100px, cover;
+            background-position: 13px 13px, center;
+            background-repeat: repeat, no-repeat;
+        }
+
+        .black {
+            
+        }
+        /*
+        .row div {
+            display: table-cell;
+            width: 50px;
+            height: 50px;            
+        }
+        .row:nth-child(1) div:nth-child(2n), .row:nth-child(3) div:nth-child(2n){            
+            background: radial-gradient(circle at 50% 50%, 
+            rgb(0, 0, 0) 15%, rgb(65, 63, 63) 30%, black 40%, rgb(65, 63, 63) 50%,
+            transparent 60%),
+            repeating-linear-gradient(60deg,rgb(92, 50, 50) 15px, rgb(92, 47, 11) 25px);
+        }
+        .row:nth-child(2) div:nth-child(2n+1){            
+            background: radial-gradient(circle at 50% 50%, 
+            rgb(0, 0, 0) 15%, rgb(65, 63, 63) 30%, black 40%, rgb(65, 63, 63) 50%,
+            transparent 60%),
+            repeating-linear-gradient(60deg,rgb(92, 50, 50) 15px, rgb(92, 47, 11) 25px);
+        }
+        .row:nth-child(6) div:nth-child(2n+1), .row:nth-child(8) div:nth-child(2n+1){
+            background: radial-gradient(circle at 50% 50%, 
+            whitesmoke 15%, rgb(165, 165, 165) 30%, whitesmoke 40%,
+            rgb(165, 165, 165) 50%, transparent 60%),
+            repeating-linear-gradient(60deg,rgb(92, 50, 50) 15px, rgb(92, 47, 11) 25px);
+        }
+        .row:nth-child(7) div:nth-child(2n){
+            background: radial-gradient(circle at 50% 50%, 
+            whitesmoke 15%, rgb(165, 165, 165) 30%, whitesmoke 40%,
+            rgb(165, 165, 165) 50%, transparent 60%),
+            repeating-linear-gradient(60deg,rgb(92, 50, 50) 15px, rgb(92, 47, 11) 25px);
+        }
+        .row:nth-child(4) div:nth-child(2n+1), .row:nth-child(5) div:nth-child(2n){
+            background: repeating-linear-gradient(60deg,rgb(92, 50, 50) 15px, rgb(92, 47, 11) 25px);
+
+        }
+        .row:nth-child(2n+1) div:nth-child(2n+1),  .row:nth-child(2n) div:nth-child(2n){
+            background: linear-gradient(225deg,rgb(230, 196, 105) 0%,
+            rgb(233, 200, 160) 30%,rgb(238, 211, 137) 70%);
+        }*/
+    </style>      
+    <title>homeworkcss_15</title>
+</head>
+<body>
+    <div class="board">
+        <div class="black"></div>
+        <div class="white"></div>      
+    </div>            
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/*Реализовать анимацию: из чаши вылетают кубики, превращаясь в пузыри и лопаются.
+Под чашей кнопка, после нажатия на которую меняется цвет жидкости в чаше
+и вылетающих пузырей. При последующих нажатиях цвета чередуются.
+1. Кнопка имеет переход с плавной анимацией при наведении.
+2. Чаша со скошенными краями.
+3. Вылетающие пузыри меняют форму и лопаются.
+4. При клике по кнопке меняется цвет чаши и пузырей.*/
+    :root {    
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        }
+    *, ::before, ::after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+        }
+    body {
+        margin: 0 auto;
+        text-align: center;    
+        }
+    .workplace {
+        margin: 50px auto;
+        width: 800px;
+        height: 800px;            
+        border: 1px solid black; 
+        }
+    .cap {
+        
+        
+        margin: 0 auto;
+        width: 80%;
+        height: 30%; 
+        margin-top: 60%;
+        border: grey solid 5px;
+        border-top: none;
+        transform: perspective(500px) rotateX(-50deg);
+        background-clip: content-box;
+        padding-top: 30px;
+        /*background-color: burlywood;       */ 
+    }
+    .bulb {
+        display: inline-block;
+        position: relative;
+        transform: perspective (1000px);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation: circle 5s ease-in-out normal infinite;
+        background-color: brown;/*linear-gradient(circle closest-side,yellow 0, lime 15%, green 100%);  */
+        
+    }
+    /*@keyframes circle {
+            from {transform: translateX(0);border-radius: 0;}
+            to {transform: translateY(-450px); background-color: rgba(255, 155, 6, 0.1);}
+        }
+        */
+    </style>
+    <title>homeworkcss_16</title>
+</head>
+<body>
+    <div class="workplace">
+        <div class="cap"><div class="bulb"></div></div>
+        <div class="bulb"></div>
+    </div>
+    <div class="button">
+
+    </div>
+</div>
+</body>
+</html>

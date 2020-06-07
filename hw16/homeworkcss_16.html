@@ -27,50 +27,130 @@
     .workplace {
         margin: 50px auto;
         width: 800px;
-        height: 800px;            
+        height: 600px;            
         border: 1px solid black; 
+        background-color: whitesmoke;
         }
+
     .cap {
-        
-        
         margin: 0 auto;
-        width: 80%;
+        width: 70%;
         height: 30%; 
-        margin-top: 60%;
+        margin-top: 50%;
         border: grey solid 5px;
         border-top: none;
         transform: perspective(500px) rotateX(-50deg);
         background-clip: content-box;
-        padding-top: 30px;
-        /*background-color: burlywood;       */ 
-    }
-    .bulb {
+        padding-top: 30px;              
+    }    
+    
+    .bubl div {        
         display: inline-block;
-        position: relative;
-        transform: perspective (1000px);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        animation: circle 5s ease-in-out normal infinite;
-        background-color: brown;/*linear-gradient(circle closest-side,yellow 0, lime 15%, green 100%);  */
+        transform-style: preserve-3d;                
+        perspective: unset;   
+        width: 15px;
+        height: 15px;               
+        }
+    
+   .bubl div:nth-child(2) {
+        margin-left: -25px;        
         
     }
-    /*@keyframes circle {
-            from {transform: translateX(0);border-radius: 0;}
-            to {transform: translateY(-450px); background-color: rgba(255, 155, 6, 0.1);}
+/*
+    .bulb :nth-child(3) {
+        animation: bulb 1s linear normal infinite;
+    }
+*/
+    @keyframes bubble_blue {
+            from {border-radius: 10%; background-color: rgb(0, 0, 255); box-shadow: 0 0 0 0 rgba(105, 105, 221, 0.7);}
+            25%  {transform: scale(1.5) translateY(-50px);}
+            50%  {box-shadow: 0 0 0 5px rgba(105, 105, 221, 0.5); transform: scale(2) translateY(-100px);}
+            75%  {transform: scale(1.5) translateY(-150px);} 
+            to   {border-radius: 50%; background-color: rgba(0, 0, 255, 0.418); box-shadow: 0 0 0 15px rgba(94, 94, 238, 0.2); transform: scale(1) translateY(-200px);}
         }
-        */
+    @keyframes bubble_red {
+            from {border-radius: 10%; box-shadow: 0 0 0 0; transform: scale(1) translateY(0px);}
+            25%  {border-radius: 20%; transform: scale(1.5) translateY(-50px);}
+            50%  {border-radius: 50%; transform: scale(2) translateY(-100px);}
+            75%  {border-radius: 50%; box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.445); transform: scale(1.5) translateY(-150px);} 
+            to   {border-radius: 50%; box-shadow: 0 0 0 15px rgba(255, 0, 0, 0.205); transform: scale(1.2) translateY(-200px);}
+        }
+        
+    .button {
+        margin: 0 auto 20px auto;
+        height: 50px;
+        width: 200px;
+        padding: 10px;
+        background-color: aquamarine;
+        color: blueviolet;
+        font-weight: bold;
+        font-size: 20px;
+        border: burlywood 2px solid;
+        box-shadow: lightgrey 2px -5px;
+        padding-top: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 800ms linear;
+    }
+
+    .button:hover{
+        transform: scale(1.1);
+        font-size: 24px;
+        color: chocolate;
+        box-shadow: grey 4px 5px;
+        background-color: darkolivegreen;
+    }
+
+    #check1 {
+        display: none;
+    }
+    #check1~label[for="check1"] {
+        display: inline-block;	
+    }
+    #check1~.cap {
+        background-color: blue;
+        
+    }
+    #check1~.cap .bubl div:nth-child(1) {
+        animation: bubble_blue 5s linear normal infinite;        
+    }
+    #check1~.cap .bubl div:nth-child(2) {
+        animation: bubble_blue 10s 3s linear normal infinite;        
+    }
+    #check1~.cap .bubl div:nth-child(3) {
+        animation: bubble_blue 5s 1s linear normal infinite;        
+    }
+    #check1~.cap .bubl div:nth-child(4) {
+        animation: bubble_blue 3s linear normal infinite;        
+    }
+
+
+    #check1:checked~.cap {
+        background-color: red;
+    } 
+    
+    #check1:checked~.cap .bubl div:nth-child(1) {                       
+        animation: bubble_red 3s 2s linear normal infinite;                
+    }
+    
     </style>
     <title>homeworkcss_16</title>
 </head>
 <body>
     <div class="workplace">
-        <div class="cap"><div class="bulb"></div></div>
-        <div class="bulb"></div>
+        <input id="check1" type="checkbox">
+        <div class="cap">            
+        
+            <div class="bubl">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>          
     </div>
-    <div class="button">
+    <label for="check1" class="button">change color</label>    
 
-    </div>
-</div>
 </body>
 </html>
